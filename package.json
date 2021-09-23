@@ -1,0 +1,29 @@
+{
+  "name": "string_replacement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --config jest.config.ts",
+    "start": "nodemon ./src/app.ts",
+    "clean": "rm -rf ./coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.10",
+    "@types/source-map-support": "^0.5.4",
+    "jest": "^27.0.6",
+    "onchange": "^7.1.0",
+    "serve": "^12.0.0",
+    "source-map-support": "^0.5.19",
+    "ts-jest": "^27.0.4"
+  }
+}
