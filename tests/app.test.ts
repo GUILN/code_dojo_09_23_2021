@@ -30,6 +30,11 @@ describe("canIHazAddends()", () => {
         expect(canIHazAddends(arr, k)).toBe(true);
     });
 
-   
+    test("{1, 1, 89, 90}, k=91", () => {
+        let arr: Array<number> = [1, 1, 89, 90];
+        let k = 91;
+
+        expect(canIHazAddends(arr, k)).toBe(true);
+    });
 
 });

@@ -5,17 +5,17 @@ const canIHazAddends = (arr: Array<number>, k: number): boolean => {
     let result = false;
     
     if(notNull(arr) && notNull(k)) {
-        let lastValue: number = 0;
-        arr.forEach((value, index, arr) => {
-           if(lastValue) {
-            if((value + lastValue) == k)
-                result = true;
-           }
-           
-           lastValue = value;
-        });
-    }
 
+        for (let i = 0; i < arr.length; i++) { 
+
+            for (let j = i + 1; j < arr.length; j++) {
+                if((arr[i] + arr[j]) == k) {
+                    return true;
+                }
+
+            }
+        }
+    }
     
     return result;
 }
